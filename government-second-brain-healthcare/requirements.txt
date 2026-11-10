@@ -1,0 +1,3 @@
+streamlit>=1.39,<2.0
+# Optional external AI narrative mode:
+openai>=1.60,<3.0

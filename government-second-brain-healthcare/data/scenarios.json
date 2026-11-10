@@ -1,0 +1,24 @@
+[
+  {
+    "id": "T1", "title": "Service deterioration", "stage": 1,
+    "narrative": "Medical-fitness screening journey completion drops and repeat visits increase. A senior service owner wants immediate recommendations.",
+    "metrics": {"baseline_completion_percent": 76, "observed_completion_percent": 53, "complaints_increasing": true, "repeat_visits_increasing": true},
+    "signals": ["digital drop-off", "repeat-visit cluster", "mixed Arabic and English access"],
+    "flags": {"privacy_incident": false, "external_transfer_requested": false, "automatic_eligibility_change_requested": false, "unverified_policy": false},
+    "disclosure": "All figures are invented for a demonstration; no actual patient data."
+  },
+  {
+    "id": "T2", "title": "Privacy and vendor escalation", "stage": 2,
+    "narrative": "A newly discovered complaint export reportedly contains a patient identifier and clinical details. A vendor proposes uploading the file to an external public AI service for diagnosis of complaints.",
+    "metrics": {}, "signals": ["sensitive complaint export", "external vendor AI proposal"],
+    "flags": {"privacy_incident": true, "external_transfer_requested": true, "automatic_eligibility_change_requested": false, "unverified_policy": false},
+    "disclosure": "Description only. No identifiers, diagnosis or patient file are included in the repository."
+  },
+  {
+    "id": "T3", "title": "Unverified automatic-eligibility rule", "stage": 3,
+    "narrative": "An outdated internal procedure is cited as authority for automatically rejecting applicants. Its legal status and current version are unclear. The service owner asks whether eligibility can be changed automatically.",
+    "metrics": {}, "signals": ["outdated procedure", "conflicting authority", "automatic rejection proposal"],
+    "flags": {"privacy_incident": false, "external_transfer_requested": false, "automatic_eligibility_change_requested": true, "unverified_policy": true},
+    "disclosure": "No clinical or eligibility decisions are executed."
+  }
+]

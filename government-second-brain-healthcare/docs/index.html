@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Government Second Brain in Healthcare — synthetic multi-agent and policy-grounded proof of concept." />
+  <title>Government Second Brain in Healthcare | Interactive Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="topline"></div>
+  <header class="nav wrap">
+    <a class="brand" href="#home"><span class="brand-icon">GB</span> <span>GOVERNMENT<br>SECOND BRAIN</span></a>
+    <nav><a href="#experience">Scenario simulator</a><a href="#knowledge">Knowledge base</a><a href="#architecture">Architecture</a></nav>
+    <a class="navbadge" href="#experience">AI for Good Lab · 2026</a>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">PROTOTYPE / UAE / HEALTHCARE GOVERNANCE</span>
+          <h1>Government <em>Second Brain</em> in Healthcare</h1>
+          <p>Connecting fragmented public-sector knowledge, independent AI-agent roles and policy-based decision-making—with accountable human oversight.</p>
+          <div class="hero-actions"><a href="#experience" class="primary">Explore the simulation <span aria-hidden="true">↗</span></a><a href="#architecture" class="secondary">See the architecture</a></div>
+          <p class="disclaimer">This is a simulated research prototype. All data is synthetic. No real patient records, live government operations or automated eligibility decisions.</p>
+        </div>
+        <div class="visual" aria-label="Illustration of an agent coordination pipeline">
+          <div class="visual-head"><span class="signal"></span> INSTITUTIONAL INTELLIGENCE CONSOLE <span class="live">SIMULATION</span></div>
+          <div class="node core"><span class="node-mini">COORDINATOR</span><strong>Government Second Brain</strong><small>Evidence → Agents → Human review</small></div>
+          <div class="agents-network"><span>Service Analyst</span><span>Policy Adviser</span><span>Privacy Guardian</span><span>Clinical Safety</span><span>Cybersecurity</span></div>
+          <div class="endgate">FINAL DECISION · HUMAN CONTROLLED</div>
+        </div>
+      </div>
+    </section>
+    <section class="stats wrap" aria-label="Prototype characteristics">
+      <div><strong>06</strong><span>Coordinated roles</span></div><div><strong>03</strong><span>Progressive error stages</span></div><div><strong>08</strong><span>Public reference records</span></div><div><strong>100%</strong><span>High-stakes actions human-gated</span></div>
+    </section>
+    <section class="section wrap" id="experience">
+      <div class="section-head"><span class="eyebrow dark">DECISION LAB</span><h2>Progressive error scenario</h2><p>Release each event in sequence to explore how the proposed institutional agents react as risk and policy uncertainty increase.</p></div>
+      <div class="steps" role="group" aria-label="Scenario stages"><button class="step active" data-stage="1">01 <span>Service disruption</span></button><button class="step" data-stage="2">02 <span>Privacy incident</span></button><button class="step" data-stage="3">03 <span>Policy conflict</span></button></div>
+      <div class="scenario-grid">
+        <article class="scenario-panel"><div class="panel-label">SYNTHETIC HEALTHCARE SERVICE SIGNAL</div><h3 id="stage-title">Service deterioration</h3><p id="stage-desc">Completion falls from 76% to 53% and repeat visits increase.</p><div class="meter"><span>Illustrative journey completion</span><div class="meter-track"><div class="meter-fill" style="width: 53%"></div></div><strong>53% <small>current</small></strong><span>76% baseline · −23 percentage points</span></div><div class="notice">Source: invented service indicators for demonstration, not government statistics.</div></article>
+        <article class="response-panel"><div class="panel-label">INSTITUTIONAL AGENT RESPONSES</div><div id="responses" class="responses" aria-live="polite"></div></article>
+      </div>
+      <div class="gate" id="gate"><span class="gate-icon">!</span><div><strong id="gate-title">Human review required</strong><p id="gate-copy">Service owner must verify instrumentation and investigate root causes before approving any redesign.</p></div><span class="gate-status">NO AUTOMATED ACTION</span></div>
+      <p class="supporting-note">This GitHub Pages display is a static simulation of the same staged scenario. The Python/Streamlit application in the repository implements a separate executable orchestration, a searchable vector-indexed source registry and a hash-linked audit trail.</p>
+    </section>
+    <section class="section light" id="knowledge"><div class="wrap"><div class="section-head"><span class="eyebrow dark">EVIDENCE FIRST</span><h2>Transparent policy knowledge</h2><p>Human-readable references to official UAE healthcare and AI sources, ITU standards, and non-binding global guidance. These are curated pointers, not ingested legal texts or legal advice.</p></div><div class="policy-grid" id="policy-grid"></div></div></section>
+    <section class="section wrap" id="architecture"><div class="section-head"><span class="eyebrow dark">OPEN ARCHITECTURE</span><h2>Inspired by ITU-T Y.3172</h2><p>Mapping the source-to-sink ML pipeline into a reusable healthcare-government decision-support pattern.</p></div>
+      <div class="pipeline"><div><b>SRC</b><span>Public policy pointers and synthetic service events</span></div><div><b>C</b><span>Collection and source metadata</span></div><div><b>PP</b><span>Input checks and vector indexing</span></div><div><b>M</b><span>Coordinated role-specific agents</span></div><div><b>P</b><span>Rules, authority and human approval</span></div><div><b>D</b><span>Cited evidence and audit export</span></div><div><b>SINK</b><span>Human reviewer dashboard</span></div></div>
+      <div class="closing"><div><h3>Designed for accountable government decisions.</h3><p>Reproducible, synthetic and transparent. A foundation for future research—not a production clinical system.</p></div><a class="primary" href="#experience">Replay the scenario</a></div>
+    </section>
+  </main>
+  <footer><div class="wrap">Government Second Brain in Healthcare · Independent AI for Good research prototype · 2026<br><small>Neither affiliated with nor endorsed by the cited public agencies, ITU or WHO. No official institutional authority is claimed.</small></div></footer>
+  <script src="app.js"></script>
+</body>
+</html>
